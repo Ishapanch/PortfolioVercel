@@ -28,7 +28,8 @@ export default function Contact() {
       services: services.value,
     };
     console.log("Form Details:", details);
-    let response = await fetch("http://localhost:5000/contact", {
+    // let response = await fetch("http://localhost:5000/contact", {
+      let response = await fetch("https://portfolio-server-sandy.vercel.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
